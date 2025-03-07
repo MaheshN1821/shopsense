@@ -21,8 +21,8 @@ app.use(express.json());
 const corsOptions = {
   origin: function (origin, callback) {
     const allowedOrigins = [
-      "https://shopsense.vercel.app",
-      "https://www.shopsense.vercel.app",
+      "https://shopsense-beta.vercel.app",
+      "https://www.shopsense-beta.vercel.app",
     ];
 
     if (!origin || allowedOrigins.includes(origin)) {

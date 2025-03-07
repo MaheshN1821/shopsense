@@ -91,11 +91,11 @@ const handleStatus = async (req, res) => {
     .then(async (response) => {
       if (response.data.success === true) {
         // console.log("redirecting to cart");
-        const url = `http://localhost:5173/cart`;
+        const url = `https://shopsense-beta.vercel.app/cart`;
         return res.redirect(url);
       } else {
         // console.log("redirecting to home");
-        const url = `http://localhost:5173/`;
+        const url = `https://shopsense-beta.vercel.app/`;
         return res.redirect(url);
       }
     })
