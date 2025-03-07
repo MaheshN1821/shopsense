@@ -23,6 +23,8 @@ const corsOptions = {
     const allowedOrigins = [
       "https://shopsense-beta.vercel.app",
       "https://www.shopsense-beta.vercel.app",
+      "https://shopsense-backend.vercel.app",
+      "https://www.shopsense-backend.vercel.app",
     ];
 
     if (!origin || allowedOrigins.includes(origin)) {
