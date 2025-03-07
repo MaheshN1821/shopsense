@@ -1,4 +1,5 @@
 import "./App.css";
+import { Analytics } from "@vercel/analytics/react";
 import Footer from "./components/footer/footer";
 import Home from "./pages/home/home";
 import { Route, Routes } from "react-router-dom";
@@ -82,6 +83,7 @@ function App() {
         <Route path="/seller/settings" element={<SellerSettings />} />
       </Routes>
       <Footer />
+      <Analytics />
     </>
   );
 }
