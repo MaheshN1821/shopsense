@@ -463,3 +463,9 @@
     width: 100%;
   }
 }
+
+@media (min-width: 340px) and (max-width: 520px) {
+  .brandDes {
+    font-size: 1rem;
+  }
+}

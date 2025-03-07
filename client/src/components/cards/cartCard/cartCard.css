@@ -90,3 +90,13 @@
   background-color: rgba(0, 0, 0, 0.616);
   color: white;
 }
+
+@media (min-width: 340px) and (max-width: 700px) {
+  .Mstyle {
+    width: 85vw;
+  }
+  .back {
+    font-size: 14px;
+    padding: 4px 10px;
+  }
+}

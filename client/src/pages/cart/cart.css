@@ -325,3 +325,31 @@
     font-size: 15px;
   }
 }
+
+@media (min-width: 340px) and (max-width: 520px) {
+  .cardCont .brandDes {
+    font-size: 1rem;
+  }
+  .cardCont .size {
+    font-size: 13px;
+  }
+  .cardCont .mainCartPrice {
+    font-size: 13px;
+  }
+  .cardCont .cartDiscount {
+    font-size: 11px;
+  }
+  .cardCont .cartOffer {
+    font-size: 11px;
+  }
+  .cardCont .cartCard {
+    height: 170px;
+  }
+  .cardCont .terrible {
+    font-size: 10px;
+    margin-top: 3px;
+  }
+  .cardCont .seven {
+    font-size: 10px;
+  }
+}
