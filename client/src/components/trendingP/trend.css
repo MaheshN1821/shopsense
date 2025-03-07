@@ -1,0 +1,123 @@
+.playwrite-gb-s-newFont {
+  font-family: "Playwrite GB S", cursive;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-style: normal;
+}
+
+.trendBg {
+  background-color: #f1f2f4;
+}
+
+.trendContainer {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-family: "Playwrite GB S", cursive;
+}
+
+.trendCard {
+  width: 500px;
+  height: 240px;
+  margin: 20px;
+}
+
+.ttitle {
+  display: block;
+  height: 100px;
+  font-size: 3rem;
+  text-align: center;
+  padding: 20px;
+  font-family: "Playwrite GB S", cursive;
+}
+
+.trendCard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 1.1px 4.6px -15px rgba(0, 0, 0, 0.022),
+    0px 2.8px 11.6px -15px rgba(0, 0, 0, 0.031),
+    0px 5.7px 23.7px -15px rgba(0, 0, 0, 0.039),
+    0px 11.7px 48.9px -15px rgba(0, 0, 0, 0.048),
+    0px 32px 134px -15px rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+
+.trendCard:hover {
+  transform: scale(1.1);
+  transition: all 300ms ease-in-out;
+}
+
+.imgContainer {
+  overflow: hidden;
+}
+
+.trendCard img:hover {
+  transform: scale(1.1);
+  transition: all 300ms ease-in-out;
+}
+
+.trendCardText {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  /* border: 2px solid #f1f2f4; */
+  border: 1px solid rgb(180, 174, 174);
+  height: 184px;
+}
+
+.head {
+  font-size: 2rem;
+}
+
+.s {
+  color: rgb(79, 206, 79);
+  font-size: 1.2rem;
+  margin: 0px;
+}
+
+.off {
+  font-size: 1.4rem;
+}
+
+@media (min-width: 340px) and (max-width: 800px) {
+  .trendCard {
+    width: 80vw;
+    height: 220px;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 420px) {
+  .trendCard {
+    width: 80vw;
+    height: 180px;
+  }
+  .trendCardText {
+    border: none;
+  }
+  .imgContainer img {
+    width: 200px;
+    height: 180px;
+    margin-left: 10px;
+  }
+  .head {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+  }
+  .s {
+    font-size: 1rem;
+  }
+  .off {
+    font-size: 1.1rem;
+  }
+}

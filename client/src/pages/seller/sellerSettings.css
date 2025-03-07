@@ -1,0 +1,261 @@
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-regular {
+  font-family: "Lobster Two", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sellerDetailsContSettings {
+  width: 100%;
+  height: fit-content;
+  background-image: url("../../assets/images/seller3.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+.sellerDetailsSideBarSettings {
+  width: 18%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  background-color: white;
+  margin: 20px 10px 0px 0px;
+}
+
+.sellerDetailsMainSettings {
+  width: 78%;
+  height: fit-content;
+  /* background-color: rgba(255, 255, 255, 0.322); */
+  background-color: rgba(255, 255, 255, 0.562);
+  margin: 20px;
+  padding: 20px 40px 20px 40px;
+  border: 1px solid rgba(0, 153, 255, 0.267);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.sellerNameAdd {
+  /* background-color: rgba(137, 43, 226, 0.329); */
+  background-color: rgba(0, 153, 255, 0.267);
+  margin: 4px;
+  color: black;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.sellerDetailsImgAdd {
+  width: 60%;
+  height: fit-content;
+}
+
+.sellerWelcomeAdd {
+  font-size: 8rem;
+  text-align: center;
+  font-family: "Lobster Two", "Pacifico", serif;
+  /* transform: rotate(-8deg); */
+}
+
+.seller-opt-gen {
+  background-color: white;
+  margin: 4px 0px;
+  padding: 2px 10px;
+}
+
+.head-head {
+  font-weight: 600;
+  color: white;
+  padding: 2px 8px;
+  margin: 10px 0px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.363);
+}
+
+.info-head-1 {
+  font-size: 1.8rem;
+  text-align: center;
+  background-color: rgba(0, 153, 255, 0.267);
+  padding: 8px 10px;
+  /* color: white; */
+}
+
+.info-sub-head {
+  font-size: 1.4rem;
+}
+
+.info-cont-2 {
+  font-size: 1.2rem;
+}
+
+.seller-container {
+  width: 100%;
+  padding: 20px;
+  position: relative;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.user-info,
+.seller-info {
+  padding: 10px;
+  /* background: #f9f9f9; */
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+strong {
+  color: #000;
+}
+
+.seller-info-head {
+  font-size: 1.6rem;
+}
+
+.update-float {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px 20px 0px 0px;
+  font-size: 1.6rem;
+  border: 1px solid;
+  padding: 2px 8px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.315);
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.update-float:hover {
+  background-color: rgba(0, 153, 255, 0.267);
+}
+
+.seller-update-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 10px;
+  background-color: rgba(0, 0, 0, 0.212);
+}
+
+.info-head-1000 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.479);
+}
+
+@media (min-width: 340px) and (max-width: 786px) {
+  .sellerDetailsSideBarAdd {
+    width: 30%;
+  }
+
+  .sellerDetailsMainAdd {
+    width: 70%;
+    height: fit-content;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 500px) {
+  .sellerDetailsContAdd {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  .sellerDetailsSideBarAdd {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+  }
+
+  .sellerName {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .sellerDetailsMainAdd {
+    width: 90%;
+    height: fit-content;
+  }
+
+  .seller-opt-gen {
+    margin: 4px;
+  }
+
+  .info-head-1 {
+    font-size: 1.3rem;
+  }
+  .info-sub-head {
+    font-size: 1.1rem;
+  }
+  .info-cont-2 {
+    font-size: 0.9rem;
+  }
+  .sellerNameAdd {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 620px) {
+  .sellerDetailsContSettings {
+    display: flex;
+    flex-direction: column;
+  }
+  .sellerDetailsSideBarSettings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    height: fit-content;
+  }
+  .sellerDetailsMainSettings {
+    width: 94%;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 460px) {
+  .sellerDetailsMainSettings {
+    padding: 0px;
+    margin: 2px;
+  }
+  .sellerDetailsContSettings {
+    justify-content: center;
+    align-items: center;
+  }
+  .sellerDetailsSideBarSettings {
+    margin-right: 0px;
+  }
+  .user-info {
+    font-size: 1rem;
+  }
+  .seller-info {
+    font-size: 1rem;
+  }
+  .update-float {
+    font-size: 1.2rem;
+    margin: 10px;
+  }
+  .info-head-1000 {
+    font-size: 1.6rem;
+  }
+}

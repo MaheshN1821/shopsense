@@ -1,0 +1,20 @@
+.noStock {
+  cursor: not-allowed;
+  filter: grayscale(1);
+}
+
+.noStock::after {
+  content: "Not Available";
+  text-align: center;
+  position: absolute;
+  top: 120px;
+  left: 0px;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.719);
+}
+
+.remove-wish {
+  display: none;
+}

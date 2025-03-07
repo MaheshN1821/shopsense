@@ -1,0 +1,102 @@
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-regular {
+  font-family: "Lobster Two", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sellerDetailsContView {
+  width: 100%;
+  height: fit-content;
+  background-image: url("../../assets/images/seller4.jpg");
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+}
+
+.sellerDetailsSideBarView {
+  width: 18%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  background-color: white;
+  margin: 20px 10px 0px 0px;
+}
+
+.sellerDetailsMainView {
+  width: 78%;
+  height: fit-content;
+  /* background-color: rgba(255, 255, 255, 0.322); */
+  background-color: rgba(255, 255, 255, 0.562);
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sellerNameView {
+  /* background-color: rgba(137, 43, 226, 0.329); */
+  background-color: rgba(0, 153, 255, 0.267);
+  margin: 4px;
+  color: black;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+
+.sellerDetailsImgView {
+  width: 60%;
+  height: fit-content;
+}
+
+.sellerWelcomeView {
+  font-size: 8rem;
+  text-align: center;
+  font-family: "Lobster Two", "Pacifico", serif;
+  /* transform: rotate(-8deg); */
+}
+
+.watchData,
+.footwearData,
+.eyewearData,
+.booksData,
+.pantData,
+.tshirtData,
+.shirtData,
+.clothingData {
+  width: 100%;
+}
+
+@media (min-width: 340px) and (max-width: 650px) {
+  .sellerDetailsContView {
+    display: flex;
+    flex-direction: column;
+  }
+  .sellerDetailsSideBarView {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: fit-content;
+    margin: 30px 0px 30px 0px;
+  }
+  .sellerDetailsSideBarView .sellerNameView {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .sellerDetailsSideBarView .sellerName {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .sellerDetailsMainView {
+    width: 90%;
+  }
+}

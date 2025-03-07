@@ -1,0 +1,95 @@
+.some-track-head {
+  /* border: 1px solid; */
+  width: 300px;
+  height: fit-content;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, 0.795);
+  /* background-color: rgba(255, 255, 255, 0.685); */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.some-img-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0px;
+}
+
+.some-track-image {
+  width: 240px;
+  height: fit-content;
+}
+
+.some-progress {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin: 8px;
+  padding: 4px 6px;
+  background-color: rgba(0, 153, 255, 0.267);
+}
+
+.some-other-container {
+  padding: 10px;
+  margin: 4px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.some-cont-values {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.some-cont-values-id {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.update-progress-btn-some {
+  margin: -5px 10px 20px 10px;
+  border: 1px solid;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 8px 0px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.update-progress-btn-some:hover {
+  background-color: rgba(0, 153, 255, 0.267);
+  border: 1px solid white;
+}
+
+.extra-other-options {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 10px 10px;
+  margin: -10px 4px 4px 4px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.i-dont-know {
+  margin: 0px 0px 10px 0px;
+  border: 1px solid white;
+  padding: 4px 0px;
+  cursor: pointer;
+  background-color: rgba(0, 153, 255, 0.267);
+}
+
+@media (min-width: 340px) and (max-width: 590px) {
+  .some-progress {
+    font-size: 1.2rem;
+  }
+  .some-other-container {
+    font-size: 1rem;
+  }
+  .update-progress-btn-some {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,102 @@
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-regular {
+  font-family: "Lobster Two", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sellerDetailsCont {
+  width: 100%;
+  height: 130vh;
+  background-image: url("../../assets/images/seller2.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+}
+
+.sellerDetailsSideBar {
+  width: 18%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  background-color: white;
+  margin: 20px 10px 0px 0px;
+}
+
+.sellerDetailsMain {
+  width: 78%;
+  height: 90vh;
+  /* background-color: rgba(255, 255, 255, 0.322); */
+  background-color: rgba(255, 255, 255, 0.562);
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sellerName {
+  /* background-color: rgba(137, 43, 226, 0.329); */
+  background-color: rgba(0, 153, 255, 0.267);
+  margin: 4px;
+  color: black;
+  padding: 4px 10px;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.sellerDetailsImg {
+  width: 60%;
+  height: fit-content;
+}
+
+.sellerWelcome {
+  font-size: 8rem;
+  text-align: center;
+  font-family: "Lobster Two", "Pacifico", serif;
+  /* transform: rotate(-8deg); */
+}
+
+@media (min-width: 340px) and (max-width: 750px) {
+  .sellerWelcome {
+    font-size: 5rem;
+  }
+
+  .sellerDetailsSideBar {
+    width: 30%;
+  }
+
+  .sellerDetailsMain {
+    width: 70%;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 500px) {
+  .sellerDetailsCont {
+    flex-direction: column;
+    height: 110vh;
+  }
+  .sellerDetailsSideBar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: fit-content;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+  }
+
+  .sellerDetailsMain {
+    width: 90%;
+    height: 60vh;
+  }
+
+  .sellerWelcome {
+    font-size: 4.4rem;
+  }
+}

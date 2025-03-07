@@ -1,0 +1,45 @@
+.pContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  /* flex-wrap: wrap; */
+  width: 100%;
+  height: 140px;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.prod {
+  width: 140px;
+  height: 100px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.playout {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media (min-width: 340px) and (max-width: 1024px) {
+  .pContainer {
+    border-top: none;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 800px) {
+  .pContainer {
+    width: 100%;
+    height: 140px;
+    white-space: nowrap;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
+  .prod {
+    margin: 0px 10px;
+  }
+}

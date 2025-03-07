@@ -1,0 +1,107 @@
+.total-complete-cont {
+  margin-bottom: 20px;
+}
+
+.cart-address-cont {
+  border-top: 1px solid black;
+  width: 100%;
+  height: fit-content;
+  background-image: url("../../assets/images/seller5.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  /* margin: 20px 0px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paypage {
+  width: 80%;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(0, 0, 0, 0.144); */
+  /* background-color: rgba(0, 0, 0, 0.116); */
+}
+
+.cart-some-name {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid; */
+  width: fit-content;
+  /* background-color: rgba(0, 0, 0, 0.116); */
+  background-color: rgba(255, 255, 255, 0.658);
+  padding: 4px 10px;
+  margin: 4px;
+}
+
+.cart-some-name label {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.cart-some-name input {
+  width: 40vw;
+  margin: 10px 10px 10px 0px;
+  padding: 4px 6px;
+}
+
+.cart-some-name input:focus {
+  outline: none;
+}
+
+.cart-note {
+  font-size: 1.2rem;
+  color: rgb(236, 26, 26);
+  background-color: rgba(255, 255, 255, 0.897);
+  font-weight: 600;
+  padding: 4px 10px;
+  margin: 8px 0px;
+  text-align: center;
+}
+
+.payBtn {
+  cursor: pointer;
+  padding: 4px 10px;
+  border: none;
+  background-color: rgb(245, 192, 47);
+  color: white;
+  font-weight: 500;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.error-cart {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: red;
+  text-align: center;
+}
+
+@media (min-width: 340px) and (max-width: 600px) {
+  .cart-some-name input {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 479px) {
+  .cart-some-name input {
+    width: 80vw;
+    font-size: 14px;
+  }
+  .cart-some-name label {
+    font-size: 1rem;
+  }
+  .cart-some-name-one {
+    width: 125%;
+  }
+  .cart-some-name-one button {
+    width: 100%;
+    margin: 10px 0px;
+  }
+}

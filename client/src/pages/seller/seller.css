@@ -1,0 +1,201 @@
+.sellerCont {
+  background-color: #136af8;
+  width: 100%;
+  height: fit-content;
+}
+
+.sellerLogo {
+  width: 210px;
+  height: 90px;
+  mix-blend-mode: darken;
+  margin-left: 12px;
+}
+
+.sellerNav {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px 0px 10px;
+  /* border: 1px solid white; */
+}
+
+.sellerNavContents {
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.sellCont {
+  margin: 10px 30px 0px 30px;
+}
+
+.sellCont:hover {
+  /* color: #136bf8ef; */
+  color: rgba(0, 0, 0, 0.767);
+  background-color: white;
+  padding: 6px 12px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.sellerHeroProp {
+  width: 66%;
+  height: 88vh;
+  position: relative;
+}
+
+.sellerHero {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+}
+
+.sellHeroImgCont {
+  width: fit-content;
+}
+
+.extra-shape {
+  background-color: white;
+  padding: 20px;
+  height: 75vh;
+  width: 400px;
+}
+
+.sellerText {
+  font-size: 3.8rem;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 60px;
+  /* margin-left: 30px; */
+}
+
+.sellerContent {
+  width: 100%;
+  height: 80vh;
+  background-color: #136af8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seller-white-bg {
+  background-color: white;
+  width: 80%;
+  padding: 30px;
+}
+
+.sellerWhyHead {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.seller-gen {
+  font-size: 1.3rem;
+  line-height: 2.1rem;
+}
+
+.sellerFooter {
+  width: 100%;
+  height: 200px;
+}
+
+@media (min-width: 340px) and (max-width: 1200px) {
+  .extra-shape {
+    height: 70vh;
+  }
+  .sellerHeroProp {
+    height: 82vh;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 1016px) {
+  .sellerText {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 736px) {
+  .sellerNav {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .sellerNavContents {
+    margin-bottom: 20px;
+    width: 100vw;
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.336);
+  }
+
+  .sellCont {
+    margin: 0px;
+  }
+
+  .sellerText {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 601px) {
+  .sellerContent {
+    height: fit-content;
+    margin: 20px 0px;
+  }
+  .extra-shape {
+    height: 60vh;
+  }
+  .sellerHeroProp {
+    height: 66vh;
+    object-fit: cover;
+  }
+  .sellerText {
+    margin: 20px 0px 0px 10px;
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 480px) {
+  .sellerContent {
+    height: fit-content;
+    background-color: #136af8;
+    margin: 20px 0px;
+  }
+  .extra-shape {
+    height: 40vh;
+  }
+  .sellerHeroProp {
+    height: 50vh;
+    width: 64%;
+    object-fit: cover;
+  }
+  .sellerText {
+    margin: 44px 0px 0px 0px;
+    font-size: 1.4rem;
+  }
+  .sellCont {
+    font-size: 1rem;
+  }
+  .sellerWhyHead {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .seller-gen {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .seller-white-bg {
+    width: 92%;
+    margin-bottom: 20px;
+    padding: 12px 20px;
+  }
+}

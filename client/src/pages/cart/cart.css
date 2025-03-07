@@ -1,0 +1,327 @@
+.cartContainer {
+  width: 100%;
+  height: fit-content;
+  border-top: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #edeff2;
+}
+
+.displayProd {
+  width: 40%;
+  height: fit-content;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4px;
+  padding: 10px;
+  background-color: white;
+}
+
+.orderSummary {
+  width: 30%;
+  height: fit-content;
+  border: 1px solid white;
+  margin: 4px;
+  padding: 10px 0px 20px 0px;
+  background-color: white;
+}
+
+.cartCard {
+  position: relative;
+  width: 90%;
+  height: 200px;
+  border: 1px solid;
+  margin: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cartImg {
+  width: 36%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardCont {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+.brandDes {
+  width: 85%;
+  margin: 0px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.brandNam {
+  font-size: 0.9rem;
+}
+
+.cartPrice {
+  margin-bottom: -5px;
+}
+
+.mainCartPrice {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.cartDiscount {
+  margin: 0px 4px 0px 4px;
+  color: gray;
+}
+
+.seven {
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin: 0px;
+}
+
+.cartOffer {
+  color: rgb(56, 212, 56);
+  font-weight: 500;
+}
+
+.size {
+  width: fit-content;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.quantity {
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+.sizeAndQuant {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.number-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  padding: 0px 4px;
+  border-radius: 14px;
+  margin-right: 20px;
+}
+
+.number-left,
+.number-right {
+  margin: 0px 8px;
+  font-weight: bolder;
+  cursor: pointer;
+  padding-bottom: 3px;
+}
+
+.numCount {
+  margin: 0px 10px;
+}
+
+.close {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  border: 1px solid;
+  border-radius: 100%;
+  padding: 0px 8px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: gray;
+  color: white;
+}
+
+.cartHeading {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cartHead {
+  font-size: 1.4rem;
+  margin: 10px 10px 20px 10px;
+  font-weight: 500;
+}
+
+.remOpt {
+  font-size: 1.1rem;
+  margin: 10px 10px 20px 10px;
+  cursor: pointer;
+}
+
+.remOpt:hover {
+  font-weight: 500;
+}
+
+.alert {
+  font-size: 1.6rem;
+  margin: 10px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cHead {
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin: 10px;
+}
+
+.pHead {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 16px 10px 2px 20px;
+}
+
+.billDetails {
+  line-height: 10px;
+  margin: 16px 10px 2px 20px;
+}
+
+.forPosition {
+  position: relative;
+}
+
+.end {
+  font-weight: 500;
+  position: absolute;
+  right: 16px;
+}
+
+.ending {
+  margin: 24px 15px 2px 15px;
+  font-weight: 650;
+  font-size: 1.2rem;
+}
+
+.placeOrder {
+  margin: 10px 0px 10px 0px;
+  text-align: center;
+  background-color: rgba(23, 23, 228, 0.842);
+  color: white;
+  padding: 10px;
+  width: 100%;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toBeDeleted {
+  color: gray;
+  margin: 0px 4px 0px 0px;
+}
+
+.toBeGreen {
+  color: rgb(34, 207, 34);
+}
+
+@media (min-width: 340px) and (max-width: 1200px) {
+  .cartContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .displayProd {
+    width: 480px;
+  }
+
+  .orderSummary {
+    width: 414px;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 520px) {
+  .cartContainer {
+    padding: 10px 0px 0px 0px;
+  }
+  .orderSummary {
+    width: 310px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+  }
+  .displayProd {
+    width: 320px;
+    margin: 10px 0px;
+  }
+  .sizeAndQuant {
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+  }
+  .number-control {
+    width: 70px;
+    height: 22px;
+    font-size: 12px;
+    margin: 0px 4px 0px 0px;
+  }
+  .brandDes {
+    font-size: 1rem;
+  }
+  .size {
+    font-size: 13px;
+  }
+  .mainCartPrice {
+    font-size: 13px;
+  }
+  .cartDiscount {
+    font-size: 11px;
+  }
+  .cartOffer {
+    font-size: 11px;
+  }
+  .cartCard {
+    height: 170px;
+  }
+  .terrible {
+    font-size: 10px;
+    margin-top: 3px;
+  }
+  .seven {
+    font-size: 10px;
+  }
+  .close {
+    right: 6px;
+  }
+  .cartHead {
+    font-size: 1.1rem;
+  }
+  .remOpt {
+    font-size: 13px;
+  }
+  .cHead {
+    font-size: 1.3rem;
+  }
+  .pHead {
+    font-size: 1.2rem;
+  }
+  .billDetails {
+    font-size: 14px;
+  }
+  .ending {
+    font-size: 15px;
+  }
+}
