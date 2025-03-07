@@ -16,7 +16,7 @@ function Filter() {
     try {
       // as a precaution we con store the path names in an array and use Array.includes method to check if it is present in the array before making a request to prevent crashing the server/DB
       const response = await axios.post(
-        `http://localhost:3000${path.pathname}`,
+        `https://shopsense-backend.vercel.app${path.pathname}`,
         JSON.stringify(data),
         {
           headers: {

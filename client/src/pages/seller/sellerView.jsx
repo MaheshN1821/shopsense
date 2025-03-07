@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import "./sellerView.css";
 import api from "../../utils/api";
 import { useContext, useEffect, useState } from "react";
-import ProductTable from "./producttable";
+import ProductTable from "./productTable";
 import { FilterContext } from "../../components/context/context";
 
 function SellerView() {
