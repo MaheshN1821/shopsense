@@ -28,7 +28,8 @@ function Books() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          "http://localhost:3000/products/books"
+          "https://shopsense-backend.vercel.app/products/books",
+          { withCredentials: true }
         );
         setBookData(response.data.result);
       } catch (err) {

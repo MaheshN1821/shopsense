@@ -17,12 +17,13 @@ function SellerRegis() {
   const onSubmit = async (data) => {
     try {
       const response = await api.post(
-        "http://localhost:3000/auth/seller/register",
+        "https://shopsense-backend.vercel.app/auth/seller/register",
         JSON.stringify(data),
         {
           headers: {
             "Content-Type": "application/json",
           },
+          withCredentials: true,
         }
       );
 

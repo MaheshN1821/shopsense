@@ -28,7 +28,8 @@ function FootWear() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          "http://localhost:3000/products/footwear"
+          "https://shopsense-backend.vercel.app/products/footwear",
+          { withCredentials: true }
         );
         setFootWearData(response.data.result);
       } catch (err) {

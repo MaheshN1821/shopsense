@@ -15,12 +15,13 @@ function SellerOnBoard() {
   const onSubmit = async (data) => {
     try {
       const response = await api.post(
-        "http://localhost:3000/auth/seller/onboard",
+        "https://shopsense-backend.vercel.app/auth/seller/onboard",
         JSON.stringify(data),
         {
           headers: {
             "Content-Type": "application/json",
           },
+          withCredentials: true,
         }
       );
 

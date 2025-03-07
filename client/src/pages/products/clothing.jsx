@@ -29,7 +29,8 @@ function Clothing() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          "http://localhost:3000/products/clothing"
+          "https://shopsense-backend.vercel.app/products/clothing",
+          { withCredentials: true }
         );
         console.log(response.data);
 

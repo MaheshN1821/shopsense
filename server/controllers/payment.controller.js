@@ -15,7 +15,7 @@ const handleUserPayment = async (req, res) => {
       merchantUserId: req.body.MUID,
       name: req.body.name,
       amount: req.body.amount * 100,
-      redirectUrl: `http://localhost:3000/payment/status/?id=${merchantTransactionId}`,
+      redirectUrl: `https://shopsense-backend.vercel.app/payment/status/?id=${merchantTransactionId}`,
       redirectMode: "POST",
       mobileNumber: req.body.number,
       paymentInstrument: {

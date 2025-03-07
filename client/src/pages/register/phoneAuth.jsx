@@ -9,10 +9,11 @@ function PhoneAuth() {
     try {
       const data = { phone_num: phoneNumber };
       const response = await axios.post(
-        "http://localhost:3000/auth/sms",
+        "https://shopsense-backend.vercel.app/auth/sms",
         data,
         {
           headers: { "Content-Type": "application/json" },
+          withCredentials: true,
         }
       );
       console.log(response);

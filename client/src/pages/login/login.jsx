@@ -24,7 +24,7 @@ function Login() {
   const onSubmit = async (data) => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/auth/login",
+        "https://shopsense-backend.vercel.app/auth/login",
         JSON.stringify(data),
         {
           headers: {

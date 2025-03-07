@@ -28,7 +28,8 @@ function Watches() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          "http://localhost:3000/products/watches"
+          "https://shopsense-backend.vercel.app/products/watches",
+          { withCredentials: true }
         );
         setWatchData(response.data.result);
       } catch (err) {

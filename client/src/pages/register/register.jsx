@@ -18,12 +18,13 @@ function Register() {
   const onSubmit = async (data) => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/auth/register",
+        "https://shopsense-backend.vercel.app/auth/register",
         JSON.stringify(data),
         {
           headers: {
             "Content-Type": "application/json",
           },
+          withCredentials: true,
         }
       );
 

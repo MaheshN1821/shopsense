@@ -54,12 +54,13 @@ function Pcard({
       sellerId: sellerId,
     };
     const response = await axios.post(
-      "http://localhost:3000/products/wishlist",
+      "https://shopsense-backend.vercel.app/products/wishlist",
       JSON.stringify(info),
       {
         headers: {
           "Content-Type": "application/json",
         },
+        withCredentials: true,
       }
     );
     response.status == 200

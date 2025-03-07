@@ -28,7 +28,8 @@ function EyeWear() {
     async function fetchData() {
       try {
         const response = await axios.get(
-          "http://localhost:3000/products/eyewear"
+          "https://shopsense-backend.vercel.app/products/eyewear",
+          { withCredentials: true }
         );
         setEyeWearData(response.data.result);
       } catch (err) {

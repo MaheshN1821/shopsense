@@ -79,7 +79,11 @@ function SellerAddEyewear() {
       data.quantity = Number(data.quantity);
       data.sellerId = sellerID;
 
-      await axios.post("http://localhost:3000/products/add/eyewear", data);
+      await axios.post(
+        "https://shopsense-backend.vercel.app/products/add/eyewear",
+        data,
+        { withCredentials: true }
+      );
       notifySuccess();
     } catch (error) {
       console.error("Error adding product", error);

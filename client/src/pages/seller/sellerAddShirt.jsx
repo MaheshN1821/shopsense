@@ -79,7 +79,11 @@ function SellerAddShirt() {
       data.quantity = Number(data.quantity);
       data.sellerId = sellerID;
 
-      await axios.post("http://localhost:3000/products/clothing/shirt", data);
+      await axios.post(
+        "https://shopsense-backend.vercel.app/products/clothing/shirt",
+        data,
+        { withCredentials: true }
+      );
       // alert("Product added successfully!");
       notifySuccess();
       //   navigate("/seller/details/view");
