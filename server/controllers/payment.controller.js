@@ -15,7 +15,8 @@ const handleUserPayment = async (req, res) => {
       merchantUserId: req.body.MUID,
       name: req.body.name,
       amount: req.body.amount * 100,
-      redirectUrl: `https://shopsense-backend.vercel.app/payment/status/?id=${merchantTransactionId}`,
+      // redirectUrl: `https://shopsense-backend.vercel.app/payment/status/?id=${merchantTransactionId}`,
+      redirectUrl: `https://shopsense-beta.vercel.app/cart`,
       redirectMode: "POST",
       mobileNumber: req.body.number,
       paymentInstrument: {
@@ -51,7 +52,7 @@ const handleUserPayment = async (req, res) => {
       .then(function (response) {
         console.log(response.data);
 
-        return res.json(response.data);
+        return res.status(200).json(response.data);
       })
       .catch(function (error) {
         console.error(error);
