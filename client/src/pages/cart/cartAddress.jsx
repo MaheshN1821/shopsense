@@ -112,7 +112,7 @@ function CartAddress() {
     let res = await api
       .post("/payment/order", { ...newData })
       .then(async (res) => {
-        console.log(res);
+        // console.log(res);
 
         if (res.data.success === true) {
           await handlePostOrder(address, phone, transactionId);
